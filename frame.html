@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script src="https://cdn.bootcss.com/vConsole/3.3.0/vconsole.min.js"></script>
 </head>
 <body>
     <div id="123">hhhhhh</div>
 </body>
 <script>
+    new VConsole();
     document.getElementById('123').addEventListener('click', showMag, false);
     function showMag() {
         window.parent.HEH5.getDeviceInfo().then(function(data){
